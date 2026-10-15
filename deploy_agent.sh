@@ -1,5 +1,4 @@
-if ! command -v ??? > /dev/null 2>&1; then
-    echo "Error: ??? is not installed."
+  echo "Error: ??? is not installed."
     exit 1
 fi#!/bin/bash
 
