@@ -129,7 +129,7 @@ def mark_attendance_session(rows, total_sessions, thresholds, run_mode):
                 f"  (note: {name} has {prior_total} prior sessions on "
                 f"record, expected {expected_prior} - proceeding anyway)"
             )
- 
+
         try:
             present = prompt_present(name, email)
         except KeyboardInterrupt:
@@ -244,4 +244,4 @@ def main():
 
 
 if __name__ == "__main__":
-
+    main()
