@@ -40,8 +40,13 @@ echo "Project structure created."
 # ---------- Copy template files ----------
 cp templates/attendance_checker.py "$project_dir/"
 cp templates/config.json "$project_dir/Helpers/"
-cp templates/assets.csv "$project_dir/Helpers/"
 echo "Files copied."
+
+# ---------- Roster (Option A) ----------
+read -p "How many students to copy? " count
+head -n $((count + 1)) templates/assets.csv > "$project_dir/Helpers/assets.csv"
+sed -i "s/\"total_sessions\": [0-9]*/\"total_sessions\": 5/" "$project_dir/Helpers/config.json"
+echo "Roster created with $count students."
 
 # ---------- Permissions ----------
 chmod +x "$project_dir/attendance_checker.py"
