@@ -42,3 +42,9 @@ cp templates/attendance_checker.py "$project_dir/"
 cp templates/config.json "$project_dir/Helpers/"
 cp templates/assets.csv "$project_dir/Helpers/"
 echo "Files copied."
+
+# ---------- Permissions ----------
+chmod +x "$project_dir/attendance_checker.py"
+chmod 600 "$project_dir/Helpers/config.json"
+echo "Permissions set:"
+ls -l "$project_dir/attendance_checker.py" "$project_dir/Helpers/config.json"
