@@ -109,4 +109,4 @@ The zip contains the partial project: the folders created so far (`Helpers/`, `r
 - `cat Helpers/assets.csv` to confirm the roster size and starting counts.
 - Running a short marking session and checking that `reports/attendance.log` and `reports/absent.log` are created and that counts in `assets.csv` increase.
 - Running the archive feature and checking the timestamped files in `archives/`.
-- Edge cases: deploying over an existing directory (overwrite and abort), invalid threshold input such as `abc`, and Ctrl+C / Ctrl+Z mid-deploy.
+- Edge cases: deploying over an existing directory (overwrite and abort), invalid threshold input such as `abc`, and Ctrl+C / Ctrl+Z mid-deploy. for more information you can click on this link to watch the video:https://youtu.be/KIzhIncf9S8
